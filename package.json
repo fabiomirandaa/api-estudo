@@ -4,8 +4,9 @@
   "description": "API com o Objetivo de desenvolver melhor as habilidades e se tornar código de consulta",
   "main": "index.js",
   "scripts": {
-    "start" : "babel-node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-integration": "NODE_ENV=test mocha --opts test/integration/mocha.opts test/integration/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
-    "express": "^4.14.0"
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
   }
 }
